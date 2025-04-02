@@ -1,0 +1,171 @@
+<!--
+Stop reading my source code. This is a very simple site.
+Connect with me on LinkedIn if you want a chat, though!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is Joe? - Joe Zalewski</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #d81f1f
+        }
+
+        .container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+        
+        h2 {
+            font-weight: 300;
+            line-height: 0;
+        }
+
+        .connect {
+            position: relative;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            display: inline-flex;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .text-area {
+            flex: 1;
+        }
+
+        .image-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            align-content: center;
+        }
+        
+        .headshot {
+            border-radius: 50%;
+            overflow: hidden;
+            max-width: 280px;
+        }
+        
+        .social {
+            width: 40px;
+            height: auto;
+            display: block;
+            padding: 0px 3px;
+        }
+        
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+        }
+
+        @media only screen and (max-width: 800px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .image-area {
+                display: none;
+            }
+        }
+    </style>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Joe Zalewski</h1>
+                <h2>Data Engineer / Developer</h2>
+            </div>
+            <div class="connect">
+                <a href='https://www.linkedin.com/in/joezalewski1/' target="_blank"><img class="social" src="http://www.joezalewski.co.uk/home_rec/linkedin.png"></a>  <a href='https://github.com/joezed' target="_blank"><img class="social" src="http://www.joezalewski.co.uk/home_rec/github.png"></a>
+            </div>
+        </header>
+        <div class="content">
+            <div class="text-area">
+                <p>Welcome to my corner of the internet. Here's what I've been up to...<br><br>
+                    96' &#x1f476 - Born in the beautiful <a href='https://en.wikipedia.org/wiki/Nottingham' target="_blank">city of Nottingham</a><br>
+                    11' &#9917 - Became a <a href='https://www.nottinghamshirefa.com/' target="_blank">Football Referee</a> (still do that)<br>
+                    14' &#128222 - Volunteered on the phones for <a href='https://www.childline.org.uk/' target="_blank">Childline</a><br>
+                    18' &#x1F4BB - Graduated Computer Science at <a href='https://www.ntu.ac.uk' target='_blank'>Nottingham Trent University</a><br>
+                    19' &#x1F3EB - Completed my teacher training <a href='https://www.ntu.ac.uk' target='_blank'>there too</a><br>
+                    19' &#127890 - <a href='https://www.rufford.nottingham.sch.uk/' target="_blank">Taught Year 6</a> for four years in Nottingham City<br>
+                    22' &#x1F4DC - Developed a <a href='https://openawards.org.uk/' target="_blank">safeguarding L2 assessment</a>
+                    
+                    <br><br>
+                    Then... decided on a career change
+                    
+                    <br><br>
+                    23' &#x26AB - Became a Data Analyst at <a href='https://www.next.co.uk/' target="_blank">NEXT</a><br>
+                    25' &#x26AB - Still at <a href='https://www.next.co.uk/' target="_blank">NEXT</a>, but now a Developer / Data Engineer
+                    
+                    <br><br>
+                    And the rest is yet unwritten...
+                    
+                </p>
+                <p></p>
+            </div>
+            <div class="image-area">
+                <img class="headshot" src="http://www.joezalewski.co.uk/home_rec/headshot.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
