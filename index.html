@@ -14,16 +14,23 @@ Connect with me on LinkedIn if you want a chat, though!
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #f0f0f0;
             font-family: "Outfit", sans-serif;
             font-optical-sizing: auto;
             font-weight: 300;
             font-style: normal;
+            box-sizing: border-box;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
         }
 
         a {
@@ -33,10 +40,10 @@ Connect with me on LinkedIn if you want a chat, though!
 
         .container {
             position: relative;
-            width: 80%;
+            width: min(100%, 800px);
             max-width: 800px;
             background-color: #fff;
-            padding: 20px;
+            padding: clamp(16px, 4vw, 24px);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -44,6 +51,7 @@ Connect with me on LinkedIn if you want a chat, though!
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 16px;
             border-bottom: 1px solid #ccc;
             padding-bottom: 10px;
             font-family: "Outfit", sans-serif;
@@ -52,17 +60,32 @@ Connect with me on LinkedIn if you want a chat, though!
             font-style: normal;
         }
 
+        header > div:first-child {
+            min-width: 0;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 9vw, 4rem);
+            line-height: 1;
+            margin: 0 0 8px;
+        }
+
         h2 {
+            font-size: clamp(1.15rem, 5vw, 1.5rem);
             font-weight: 300;
-            line-height: 0;
+            line-height: 1.2;
+            margin: 0;
+            overflow-wrap: anywhere;
         }
 
         .connect {
             position: relative;
             top: 0;
             right: 0;
-            padding: 10px;
+            padding: 0;
             display: inline-flex;
+            flex: 0 0 auto;
+            gap: 6px;
         }
 
         .content {
@@ -99,7 +122,6 @@ Connect with me on LinkedIn if you want a chat, though!
             width: 40px;
             height: auto;
             display: block;
-            padding: 0px 3px;
         }
 
         .footer {
@@ -113,8 +135,8 @@ Connect with me on LinkedIn if you want a chat, though!
         .popup-menu {
             position: absolute;
             top: 50px;
-            right: -250px;
-            width: 200px;
+            right: 16px;
+            width: min(200px, calc(100% - 32px));
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
             padding: 10px;
@@ -149,6 +171,26 @@ Connect with me on LinkedIn if you want a chat, though!
 
             .image-area {
                 display: none;
+            }
+        }
+
+        @media only screen and (max-width: 520px) {
+            body {
+                align-items: flex-start;
+                padding: 12px;
+            }
+
+            header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .connect {
+                align-self: flex-end;
+            }
+
+            .text-area p {
+                line-height: 1.45;
             }
         }
     </style>
